@@ -2,14 +2,17 @@
 	<html>
 		<head>
 				<meta charset="utf-8"/>
-					<title> Reservia </title>
+                    <title> Reservia </title>
+                    <link rel="stylesheet" href="style.css">
+                    <script src="https://kit.fontawesome.com/6b55ea15fb.js" crossorigin="anonymous"></script>
+
 		</head>
 <body>
     <div id=container>
     <!--HEADER--> 
         <!--Logo-->
             <div id=logo>
-                <img src="C:\Users\konat\Documents\Openclassrooms\P2\traore_2_11122020\reservia\Projet 2 - Reservia\images\logo\Reservia@3x.png" alt="logo" />
+                <img src="file:///C:/Users/konat/Documents/Openclassrooms/P2/traore_2_11122020/reservia/Projet%202%20-%20Reservia/images/logo/Reservia.svg" alt="logo" />
             </div>
 
         <!--Navigation-->
@@ -18,12 +21,26 @@
                     <li><a href="#">Hébergements</a></li>
                     <li><a href="#">Activités</a></li>                  
                     <li><a href="#">S'inscrire</a></li>
-                    
-
                 </ul>
             </nav>
 
     <!--SECTION-->
+            <div>
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+
+            <div class="row">
+                <div class ="col">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="col">
+                    <form method="post" action="traitement.php">
+                        <p><i class="fas fa-map-marker-alt"></i><input type="text" name="recherche"/><input type="button" value="Rechercher"/></p>
+
+                    </form>
+                </div>
+            </div>
     <!--FOOTER-->
     
 
