@@ -28,9 +28,80 @@ nav a:focus {
     
 }
 
+
 #inscrire {
     color: #0065FC;
     font-weight: bold;
 }
+
+/*Filtres*/
+
+.filtres {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+/*Présentation Hébergements*/
+section{
+    width: 100%;
+}
+
+.conteneur_hebergements, .conteneur_populaire{
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+
+.conteneur_hebergements{
+    
+    width: 60%;
+    margin-right: 15px;
+    background-color: #F2F2F2;
+
+}
+
+.conteneur_populaire{
+    width: 30%;
+    background-color: #F2F2F2;
+
+}
+
+/*HEBERGEMENTS SECTION 1*/
+
+.hebergements1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hebergements2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    
+    width: 20%;
+    background-color: white ;
+    border : 5px solid white;
+    
+}
+
+img {
+    width: 100%;
+}
+
+/*Populaire*/
+.card2, .card-body2{
+    
+    display: flex;
+    width: 50%;
+    background-color: white ;
+    border : 5px solid white;
+    
+}
+
+
 
 

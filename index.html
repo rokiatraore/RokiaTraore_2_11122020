@@ -21,41 +21,154 @@
         <!--Navigation-->
                 <nav>
                     <ul>
-                        <li><a href="#">Hébergements</a></li>
-                        <li><a href="#">Activités</a></li>                  
+                        <li><a class="ab" href="#"  data-active="true">Hébergements</a></li>
+                        <li><a class="ab" href="#" data-active="false">Activités</a></li>                  
                         <li><a href="#" id="inscrire">S'inscrire</a></li>
                     </ul>
                 </nav>
         </header>
-    <!--SECTION-->
+
+    <!--RECHERCHE-->
+        
             <div>
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
 
-        
-            <div class="row">
-                <div class="col">
-                    <form method="post" action="traitement.php">
-                        <p><i class="fas fa-map-marker-alt"></i><input type="text" name="recherche"/><input type="button" value="Rechercher"/></p>
-                    </form>
-                </div>
+            <div class="">
+                <form method="post" action="traitement.php">
+                    <p><i class="fas fa-map-marker-alt"></i><input type="search" name="recherche"/><input type="button" value="Rechercher"/></p>
+                </form>
             </div>
 
-        
-            <div class="row">
-                <div class="col-lg-1">
-                    <p id="filtres">Filtres</p>
-                </div>
+            <div class="filtres">
 
-                <div class="col">
+                <h2>Filtres</h2>
+
+                <p>
                     <i class="fas fa-money-bill-wave"></i><input id="economique" type="button" value="Économique"/>
+                </p>
+
+                <p>
                     <i class="fas fa-edit"></i><input id="familial" type="button" value="Économique"/>
-                    <i class="fas fa-money-bill-wave"></i><input id="romantique" type="button" value="Économique"/>
-                    <i class="fas fa-money-bill-wave"></i><input id="animaux" type="button" value="Économique"/>
-                </div>
+                </p>
+
+                <p>
+                <i class="fas fa-money-bill-wave"></i><input id="romantique" type="button" value="Économique"/>
+                </p>
+
+                <p>
+                <i class="fas fa-money-bill-wave"><input id="animaux" type="button" value="Économique"/></i>
+                </p>
+
             </div>
-            
+        
+                <i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville 
+            <section>
+                
+                <!--Conteneur Hébergement-->
+
+            <div class="conteneur_hebergements">
+                <h1>Hébergements à Marseille</h1>
+
+                <div class="hebergements1">
+                
+                    <div class="card">
+                        <img src="C:\Users\konat\Documents\Openclassrooms\P2\traore_2_11122020\reservia\Projet 2 - Reservia\images\hebergements\2_large\marcus-loke.jpg" alt="">
+                    <div class="card-body">
+                            <h5 class="card-title">Auberge la Cannebière</h5>
+                            <p class="card-text">Nuit à partir de 25€</p>
+                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                 </div> 
+
+                        <div class="card">
+                            <img src="C:\Users\konat\Documents\Openclassrooms\P2\traore_2_11122020\reservia\Projet 2 - Reservia\images\hebergements\2_large\marcus-loke.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Auberge la Cannebière</h5>
+                            <p class="card-text">Nuit à partir de 25€</p>
+                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+
+                    
+                        <div class="card">
+                            <img src="C:\Users\konat\Documents\Openclassrooms\P2\traore_2_11122020\reservia\Projet 2 - Reservia\images\hebergements\2_large\marcus-loke.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Auberge la Cannebière</h5>
+                            <p class="card-text">Nuit à partir de 25€</p>
+                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hebergements2">
+                     
+                        <div class="card">
+                         <img src="C:\Users\konat\Documents\Openclassrooms\P2\traore_2_11122020\reservia\Projet 2 - Reservia\images\hebergements\2_large\marcus-loke.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Auberge la Cannebière</h5>
+                            <p class="card-text">Nuit à partir de 25€</p>
+                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div> 
+                    </div>
+                    
+                        <div class="card">
+                            <img src="C:\Users\konat\Documents\Openclassrooms\P2\traore_2_11122020\reservia\Projet 2 - Reservia\images\hebergements\2_large\marcus-loke.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Auberge la Cannebière</h5>
+                            <p class="card-text">Nuit à partir de 25€</p>
+                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div> 
+                    </div>
+
+                    <div class="card">
+                        <img src="C:\Users\konat\Documents\Openclassrooms\P2\traore_2_11122020\reservia\Projet 2 - Reservia\images\hebergements\2_large\marcus-loke.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Auberge la Cannebière</h5>
+                            <p class="card-text">Nuit à partir de 25€</p>
+                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div> 
+                    </div>
+                </div>
+                  
+                <a href="#">Afficher-plus</a>
+            </div>
+
+            <!--Conteneur Populaire-->
+                <div class="conteneur_populaire">
+                        <h1>Hébergements à Marseille</h1>
+
+            <div class="">
+                
+                <div class="card2">
+                    <img src="C:\Users\konat\Documents\Openclassrooms\P2\traore_2_11122020\reservia\Projet 2 - Reservia\images\hebergements\2_large\marcus-loke.jpg"  alt=""/>
+                    <div class="card-body2">
+                        <h5 class="card-title">Auberge la Cannebière</h5>
+                        <p class="card-text">Nuit à partir de 25€</p>
+                        <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                </div> 
+
+                <div class="card2">
+                    <img src="C:\Users\konat\Documents\Openclassrooms\P2\traore_2_11122020\reservia\Projet 2 - Reservia\images\hebergements\2_large\marcus-loke.jpg"  alt=""/>
+                    <div class="card-body2">
+                        <h5 class="card-title">Auberge la Cannebière</h5>
+                        <p class="card-text">Nuit à partir de 25€</p>
+                        <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                </div> 
+
+                <div class="card2">
+                    <img src="C:\Users\konat\Documents\Openclassrooms\P2\traore_2_11122020\reservia\Projet 2 - Reservia\images\hebergements\2_large\marcus-loke.jpg"  alt=""/>
+                    <div class="card-body2">
+                        <h5 class="card-title">Auberge la Cannebière</h5>
+                        <p class="card-text">Nuit à partir de 25€</p>
+                        <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                </div> 
+            </section>
+        
       
     <!--FOOTER-->
     
