@@ -1,3 +1,11 @@
+/*Page*/
+
+#bloc_page
+{
+    width: 1000px;
+    margin: auto;
+}
+
 /*Header*/
 
 header{
@@ -42,66 +50,76 @@ nav a:focus {
 
 }
 
-/*Présentation Hébergements*/
-section{
-    width: 100%;
+
+/*Section Hébergements*/
+
+
+ 
+.container-hebergements{
+    display:flex;
+    justify-content: ;
+    flex-wrap: wrap;
+    vertical-align: top;
+    margin: 15px;
+    
+
+    width: 80%;
+    max-width: 750px;
+    background-color: red;
+    float: left;
 }
 
-.conteneur_hebergements, .conteneur_populaire{
-    display: inline-block;
+figure{
+    border: solid 2px white;
+    background-color: white;
+    width: 150px;
+    
+}
+
+figure img{
+    width: 100%;
+    height:80px ;
+    object-fit: cover;
+    
+
+}
+
+figcaption{
+    /*font-family: ;*/
+    padding: 0 0 4px 6px;
+}
+
+/*Sections Populaires*/
+
+.container-populaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
     vertical-align: top;
 
-}
-
-
-.conteneur_hebergements{
-    
-    width: 60%;
-    margin-right: 15px;
-    background-color: #F2F2F2;
+    max-width: 500px;
+    background-color: red;
 
 }
 
-.conteneur_populaire{
-    width: 30%;
-    background-color: #F2F2F2;
-
-}
-
-/*HEBERGEMENTS SECTION 1*/
-
-.hebergements1{
+.populaire-figure{
     display: flex;
-    justify-content: space-around;
+    border: solid 2px grey;
+    width: 100px;
+
 }
 
-.hebergements2{
-    display: flex;
-    justify-content: space-around;
-}
-
-.card{
-    
-    width: 20%;
-    background-color: white ;
-    border : 5px solid white;
-    
-}
-
-img {
+.populaire-figure img{
     width: 100%;
-}
-
-/*Populaire*/
-.card2, .card-body2{
-    
-    display: flex;
-    width: 50%;
-    background-color: white ;
-    border : 5px solid white;
+    height: 150px;
+    object-fit: cover;
     
 }
 
 
+.populaire-figure figcaption{
+ 
+    
+}
 
 
