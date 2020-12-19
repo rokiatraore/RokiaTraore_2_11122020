@@ -91,16 +91,17 @@ nav a:focus {
 
 
 section{
-    display: flex;
-    margin-bottom: 200px;
-    /*height: 700px;*/
+   display: flex;
+   
+    
+  
 }
 
 article{
-    flex: 3;
+    flex: 2.9;
     margin-right: 15px;
-    border: solid;
-    background-color: red;
+    background-color: #F2F2F2;
+    border-radius: 20px;
 }
 
 .hebergements{
@@ -115,6 +116,7 @@ figure{
     border: solid 2px white;
     background-color: white;
     line-height:1px;
+    
 
 }
 
@@ -125,10 +127,24 @@ figure{
 
 }
 
+
+
 aside{
-    border: solid;
+    background-color: #F2F2F2;
+    border-radius: 20px;
     flex: 1.2;
     float: right;
+}
+
+.titre-populaire{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+i {
+    position: relative;
+    top:20px;
 }
 
 .populaire{
@@ -139,13 +155,15 @@ aside{
 .figure-populaire{
     
     border: solid;
+    width: 100%;
+    height: 120px;
     line-height:18px;
     width: 90%;
 }
 
 .img-populaire{
     width: 128px;
-    height: 180px;
+    height: 120px;
     object-fit: cover;
     float: left;
     
