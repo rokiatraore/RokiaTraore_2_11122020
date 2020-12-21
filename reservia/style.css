@@ -1,18 +1,9 @@
-/*Police écriture*/
-
-@font-face {
-    font-family: 'Releway';
-    src: url('MaSuperPolice.eot');
-}
-
 /*Page*/
 
 #bloc_page
 {
     width: 1200px;
     margin: auto;
-    font-family: 'Raleway', sans-serif;
-
 }
 
 /*Header*/
@@ -221,8 +212,6 @@ aside{
 #footer{
     display: flex;
     background-color: #F2F2F2 ;
-    font-family: 'Raleway', sans-serif;
-
     
 }
 
