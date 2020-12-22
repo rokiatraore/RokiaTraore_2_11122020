@@ -19,16 +19,16 @@
         <header>    
         <!--Logo-->
                 <div id=logo>
-                    <img src="reservia\Projet 2 - Reservia\images\logo\Reservia.svg" alt="logo" />
+                    <a href="#"><img src="reservia\Projet 2 - Reservia\images\logo\Reservia.svg" alt="logo" /></a>
                 </div>
 
         <!--Navigation-->
                 <nav>
-                    <ul>
-                        <li><a href="#">Hébergements</a></li>
-                        <li><a href="#">Activités</a></li>                  
-                        <li><a href="#" id="inscrire">S'inscrire</a></li>
-                    </ul>
+                    
+                        <a href="#">Hébergements</a>
+                        <a href="#">Activités</a>                
+                        <a href="#" id="inscrire">S'inscrire</a>
+                    
                 </nav>
         </header>
 
@@ -39,9 +39,9 @@
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
 
-            <div class="">
+            <div>
                 <form method="post" action="traitement.php">
-                    <p><i class="fas fa-map-marker-alt"></i><input type="search" name="recherche"/><input type="button" value="Rechercher"/></p>
+                    <p><i class="fas fa-map-marker-alt"></i><input type="search" name="recherche" value="Marseille, France"/><input type="button" value="Rechercher"/></p>
                 </form>
             </div>
 
@@ -54,15 +54,15 @@
                 </p>
 
                 <p>
-                    <i class="fas fa-edit"></i><input id="familial" type="button" value="Économique"/>
+                    <i class="fas fa-child"></i><input id="familial" type="button" value="familial"/>
                 </p>
 
                 <p>
-                <i class="fas fa-money-bill-wave"></i><input id="romantique" type="button" value="Économique"/>
+                    <i class="fas fa-heart"></i><input id="romantique" type="button" value="Romantique"/>
                 </p>
 
                 <p>
-                <i class="fas fa-money-bill-wave"><input id="animaux" type="button" value="Économique"/></i>
+                    <i class="fas fa-dog"></i><input id="animaux" type="button" value="Animaux autorisés"/></i>
                 </p>
 
             </div>
@@ -74,7 +74,7 @@
 
                 <article >
 
-                    <h3>Hébergements à Marseille</h3>
+                    <h1 class="titre-article">Hébergements à Marseille</h1>
                 <div class="hebergements">
 
                     <a href="#">
@@ -84,7 +84,7 @@
                             <figcaption>
                                 <h3>Auberge la Cannebière</h3>
                                 <p>Nuit à partir de 25€</p>
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star stargrey"></i>
                             </figcaption>
                         </figure> 
                     </a>
@@ -96,7 +96,7 @@
                             <figcaption>
                                 <h3>Hôtel du port</h3>
                                 <p>Nuit à partir de 52€</p>
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
                             </figcaption>
                         </figure>
                     </a>
@@ -107,7 +107,7 @@
                             <figcaption>
                                 <h3>Hôtel Les mouettes</h3>
                                 <p>Nuit à partir de 76€</p>
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star stargrey"></i>
                             </figcaption>                
                         </figure>
                     </a>
@@ -118,7 +118,7 @@
                             <figcaption>
                                 <h3>Hôtel de la mer</h3>
                                 <p>Nuit à partir de 46€</p>
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star stargrey"></i><i class="fas fa-star stargrey"></i>
                             </figcaption>
                         </figure>
                     </a> 
@@ -129,8 +129,7 @@
                             <figcaption>
                                 <h3>Auberge Le Panier</h3>
                                 <p>Nuit à partir de 23€</p>
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></figcaption>
-                        </figure>
+                                <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star stargrey"></i>                        </figure>
                     </a>   
 
                      <a href="#">  
@@ -139,7 +138,7 @@
                             <figcaption>
                                 <h3>Hôtel chez Amina</h3>
                                 <p>Nuit à partir de 96€</p>
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
                             </figcaption>
                             
                         </figure>
