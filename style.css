@@ -9,28 +9,45 @@
 
 #bloc_page
 {
-    width: 1200px;
+    max-width: 1300px;
     margin: auto;
     font-family: 'Raleway', sans-serif;
+  
 
 }
+
+
 
 /*Header*/
 
 header{
     display: flex;
     justify-content:space-between;
+    margin-bottom: 30px;
 }
+
+@media all and (max-width:800px){
+    #logo, .inscrire {
+        
+        display: flex;
+    }
+
+     .menu {
+        flex-direction: c;
+
+}}
 
 /*Navigation*/
 
 #logo{
-    padding: 32px;
+    padding: 32px 0px 0px 0px ;
+
 }
 
 nav {
         
         display: flex;
+        
     }
 
 
@@ -42,29 +59,39 @@ nav a {
     
 }
 
-nav a:focus {
+nav .menu:focus {
     color : #0065FC;
     border-top:solid 3px #0065FC ;
     
 }
 
-nav a:hover {
+nav .menu:hover {
     border-top:solid 3px #0065FC ;
     color: #0065FC;
     
 }
 
 
-#inscrire {
+.inscrire {
+    display: flex;
+    align-items: center;
     color: #0065FC;
     font-weight: bold;
 }
+
+
 /*Recherche*/
 
 h1{
     font-size: medium;
     font-weight: 800;
     line-height: 2px;
+}
+
+@media all and (max-width: 800px){
+    h1{
+        line-height: 15px;
+    }
 }
 
 p{
@@ -102,6 +129,13 @@ input[type=button] {
     
 }
 
+@media all and (max-width:800px){
+    .filtres{
+        display: block;
+    
+    }
+}
+
 h2{
     font-size: small;
     font-weight: bold;
@@ -132,19 +166,40 @@ h2{
 
 section{
    display: flex;
+   width: 100%;
+   max-width: 1300px;
   
 }
 
+@media all and (max-width:800px){
+    section, aside {
+        flex-direction: column-reverse;
+        margin-bottom: 10px;
+        width: 100%;
+        
+    }
+
+}
+
 article{
-    flex: 2.9;
+    flex: 3;
     margin-right: 15px;
     background-color: #F2F2F2;
     border-radius: 20px;
+    padding-bottom: 30px;
 }
+
+@media all and (max-width:800px){
+    article{
+        background-color: white;
+}
+}
+
 
 .titre-article{
     padding: 20px 0px 0px 20px;
     font-weight: bold;
+
 }
 
 .hebergements{
@@ -166,6 +221,12 @@ figure{
     
 }
 
+@media all and (max-width : 800px){
+    figure {
+        width: 100%;
+    }
+}
+
 figure:hover{
     box-shadow:1px 1px 5px black; ;
 }
@@ -175,7 +236,7 @@ article a{
 
 }
 
-.star{
+.fa-star{
     color: #0065FC;
    
 }
@@ -191,7 +252,7 @@ figcaption{
 }
 
 figcaption h3{
-    font-size: small;
+    font-size: 14px;
     font-weight: 900;
     
 }
@@ -206,9 +267,12 @@ figcaption h3{
 .afficher-plus{
     text-decoration: none;
     color: black;
-    padding: 20px 0px 0px 20px;
+    padding-left: 20px;
     font-weight: bold;
+    font-size: 15px;
 }
+
+/*Section populaire*/
 
 aside{
     background-color: #F2F2F2;
@@ -217,10 +281,26 @@ aside{
     float: right;
 }
 
+@media all and (max-width : 800px){
+    aside{
+        border-radius: 0px;
+    }
+}
+
+aside a{
+    text-decoration: none;
+}
+
 .titre-populaire{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 0px 0px 20px;
+    font-weight: bold;
     
+}
+.fa-chart-line:before{
+    padding-right: 20px;
 }
 
 
@@ -232,12 +312,13 @@ aside{
 
 .figure-populaire{
     
-    border: solid;
-    width: 100%;
+    border: solid 5px white;
+    width: 80%;
     height: 120px;
-    line-height:18px;
-    width: 90%;
+    margin: 10px;
+    
 }
+
 
 .img-populaire{
     width: 128px;
@@ -247,11 +328,40 @@ aside{
     
 }
 
+.figcaption-populaire{
+    padding-left: 140px;
+    line-height: 13px;
+    
+}
+
+@media all and (max-width:800px){
+    .figure-populaire{
+        height: 140px;
+    }
+    .img-populaire{
+        height: 140px;
+        object-fit: cover;
+    }
+}
+
+
+
+.figcaption-populaire p{
+    padding-bottom: 18px;
+}
+
+
+
 /*Activité*/
 
 .activites{
     background-color: white;
     margin-top: 25px;
+    width: 100%;
+}
+
+.activites h1{
+    padding-left: 20px;
 }
 
 
@@ -260,18 +370,19 @@ aside{
 .colonnes{
     display: flex;
     flex-wrap: wrap;   
+    justify-content: space-between;
 }
 
 .colonnes figure{
-    box-shadow: 1px 1px 5px black;
     border-radius: 15px;
     border : 0px;
 
 }
 
 .colonnes figcaption{
-    height: 15px;
+    height: 30px;
     padding-left: 15px ;
+    text-align: justify;
 }
 
 
@@ -280,8 +391,8 @@ aside{
 
 
 .colonne1 img{
-    width: 90%;
-    height: 350px;
+    width: 100%;
+    height: 250px;
     object-fit: cover;
   
 
@@ -292,22 +403,27 @@ aside{
 
 .colonne2 img{
     width: 100%;
-    height: 60px;
+    height: 65px;
     object-fit: cover;
   
 }
 
+
+
 #fort{
     width: 100%;
-    height: 90px;
+    height: 122px;
+    
 }
+
+
 
 /*Colonne 3*/ 
 
 
 .colonne3 img{
     width: 100%;
-    height: 350px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -315,15 +431,31 @@ aside{
 
 #img-garde{
     width: 100%;
-    height: 60px;
+    height: 100px;
     object-fit: cover;
 }
 
 .colonne4 img{
     width: 100%;
-    height: 70%;
+    height: 80px;
     object-fit: cover;
   
+}
+
+.activites figcaption h3{
+    font-size: 13px;
+    font-weight: bold;
+    }
+
+
+@media all and (max-width:800px){
+    .colonnes {
+       
+        margin: auto;
+    }
+    .colonnes img{
+        height: 100px;
+    }
 }
 
 /*Footer*/
@@ -341,12 +473,13 @@ aside{
     text-decoration: none;
     color: black;
     padding-bottom: 10px;
+    font-size: 14px;
+}
+
+#footer h3{
+    font-size: 14px;
 }
 
 .footer-colonne1, .footer-colonne2, .footer-colonne3{
     margin: 10px 200px 10px 40px;
 }
-
-
-
-
