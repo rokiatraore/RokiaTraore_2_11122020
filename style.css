@@ -21,35 +21,16 @@
 /*Header*/
 
 header{
-    display: flex;
-    justify-content:space-between;
-    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    grid-gap: 10px;   
+    align-items: center;
 }
 
-@media all and (max-width:800px){
-    #logo, .inscrire {
-        
-        display: flex;
-    }
 
-     .menu {
-        flex-direction: c;
-
-}}
-
-/*Navigation*/
-
-#logo{
-    padding: 32px 0px 0px 0px ;
-
+nav{
+    grid-column: 4/4;
 }
-
-nav {
-        
-        display: flex;
-        
-    }
-
 
 nav a {
     color : black;
@@ -72,12 +53,58 @@ nav .menu:hover {
 }
 
 
+
 .inscrire {
-    display: flex;
-    align-items: center;
     color: #0065FC;
     font-weight: bold;
 }
+
+@media all and (max-width:600px){
+    header{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 2em 2em ;        
+        grid-template-areas: 
+            "logo inscrire"
+            "menu menu menu";
+        
+        padding-bottom: 26px;
+        border-bottom: solid 3px#F2F2F2;
+
+    }
+
+    #logo{
+        grid-area: logo;
+        grid-column: 1/1;
+        grid-row: 1;
+    }
+    .inscrire{
+        grid-area: inscrire;
+        grid-column: 2/2;
+        grid-row: 1;
+        text-align: right;
+    }
+
+    nav{
+        grid-area: menu;
+        grid-column: 1/2;
+        grid-row: 2;
+        text-align: center;
+    }
+
+    nav .menu:focus {
+        color : #0065FC;
+        border-bottom:solid 3px #0065FC ;
+        border-top: none;
+    }
+    
+    nav .menu:hover {
+        border-bottom:solid 3px #0065FC ;
+        border-top: none;
+        color: #0065FC;
+        
+    }
+}
+
 
 
 /*Recherche*/
