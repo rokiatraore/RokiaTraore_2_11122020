@@ -16,13 +16,11 @@ body{
     max-width: 1300px;
     margin: auto;
     font-family: 'Raleway', sans-serif;
-  
-
 }
 
 
 
-/*Header*/
+/*HEADER*/
 
 header{
     display: grid;
@@ -39,9 +37,7 @@ nav{
 nav a {
     color : black;
     text-decoration: none;
-    padding: 20px;
-    
-    
+    padding: 12px;   
 }
 
 nav .menu:focus {
@@ -57,7 +53,6 @@ nav .menu:hover {
     
 }
 
-
 .inscrire {
     color: #0065FC;
     font-weight: bold;
@@ -71,7 +66,7 @@ nav .menu:hover {
             "logo inscrire"
             "menu menu ";
         
-        padding-bottom: 26px;
+        padding-bottom: 7px;
         border-bottom: solid 3px#F2F2F2;
 
     }
@@ -163,17 +158,18 @@ button{
 }
 
 @media all and (min-width: 767px){
-    .recherche_mobile {
+    .barre_recherche_mobile {
         display: none;
 }
 
 }
 @media all and (max-width: 768px){
-    .recherche_destock {
+    .barre_recherche_destock {
         display: none;
     }
 }
-/*Filtres*/
+
+/*FILTRES*/
 
 .filtres {
     display: flex;
@@ -229,7 +225,7 @@ h2{
 }
 
 
-/*Section Hébergements*/
+/*PARTIE HEBERGEMENTS*/
 
 
 section{
@@ -250,7 +246,7 @@ article{
 
 
 
-.titre-article{
+.titre_hebergements{
     padding: 20px 0px 0px 20px;
     font-weight: bold;
 
@@ -306,7 +302,7 @@ figcaption h3{
     
 }
 
-.img-hebergements{
+.img_hebergements{
     width: 100%;
     height: 100px;
     object-fit: cover;
@@ -321,7 +317,7 @@ figcaption h3{
     font-size: 15px;
 }
 
-/*Responsive - Section Hébergements*/
+/*RESPONSIVE - Partie Hébergements*/
 
 
 @media all and (max-width : 570px){
@@ -349,7 +345,7 @@ figcaption h3{
 }
 
 
-/*Section populaire*/
+/*PARTIE POPULAIRE*/
 
 aside{
     background-color: #F2F2F2;
@@ -363,7 +359,7 @@ aside a{
     text-decoration: none;
 }
 
-.titre-populaire{
+.titre_populaire{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -382,7 +378,7 @@ aside a{
     flex-direction: column;
 }
 
-.figure-populaire{
+.figure_populaire{
     
     border: solid 5px white;
     width: 80%;
@@ -392,7 +388,7 @@ aside a{
 }
 
 
-.img-populaire{
+.img_populaire{
     width: 128px;
     height: 120px;
     object-fit: cover;
@@ -400,16 +396,17 @@ aside a{
     
 }
 
-.figcaption-populaire{
+.figcaption_populaire{
     padding-left: 140px;
     line-height: 13px;
     
 }
 
-.figcaption-populaire p{
+.figcaption_populaire p{
     padding-bottom: 18px;
 }
 
+/*RESPONSIVE - Partie Populaire*/
 
 @media all and (max-width:1181px){
     section, aside{
@@ -451,10 +448,7 @@ aside a{
     }
 }
 
-
-
-
-/*Activité*/
+/*ACTIVITES*/
 
 .wrapper{
     display: grid;
@@ -463,9 +457,7 @@ aside a{
     background-color: white;
     grid-column-gap : 20px;
     grid-row-gap:20px;
-    width : 100%;
-
-   
+    width : 100%;  
 } 
 
 #sectionactivites {
@@ -535,20 +527,18 @@ aside a{
     grid-row: 5 / 8;
 }
 
-
-
-
+/*RESPONSIVE - Partie activité*/
 
 @media all and (max-width:570px){
     .wrapper{
         grid-template-areas: 
         "titre"
-        "a"
-        "b"
-        "c"
-        "d"
-        "e"
-        "f";
+        "image1"
+        "image2"
+        "image3"
+        "image4"
+        "image5"
+        "image6";
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         
@@ -557,28 +547,28 @@ aside a{
         grid-area: titre;
     }
     #img1 {
-        grid-area: a;
+        grid-area: image1;
     }
 
     #img2{
-        grid-area: b;
+        grid-area: image2;
         
     }
 
     #img3{
-        grid-area: c;
+        grid-area: image3;
     }
 
     #img4{
-        grid-area: d;
+        grid-area: image4;
     }
     
     #img5{
-        grid-area: e;
+        grid-area: image5;
     }
 
     #img6{
-        grid-area: f;
+        grid-area: image6;
     }
 
     
@@ -592,15 +582,13 @@ aside a{
 }
 
 
-/*Footer*/
+/*FOOTER*/
 
 #footer{
     display: flex;
     background-color: #F2F2F2 ;
     font-family: 'Raleway', sans-serif;
-   width: 100%;
-
-    
+    width: 100%; 
 }
 
 #footer a{
@@ -615,10 +603,15 @@ aside a{
     font-size: 14px;
 }
 
-.footer-colonne1, .footer-colonne2, .footer-colonne3{
+.footer_colonne1, .footer_colonne2, .footer_colonne3{
     margin: 10px 200px 10px 40px;
 }
 
+@media all and (max-width:800px){
+    #footer{
+        flex-direction: column;
+    }
+}
 
 
 
