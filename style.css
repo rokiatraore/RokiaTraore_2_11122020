@@ -249,6 +249,7 @@ article{
 .titre_hebergements{
     padding: 20px 0px 0px 20px;
     font-weight: bold;
+    font-size: 16px;
 
 }
 
@@ -314,7 +315,7 @@ figcaption h3{
     color: black;
     padding-left: 20px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /*RESPONSIVE - Partie Hébergements*/
@@ -359,13 +360,19 @@ aside a{
     text-decoration: none;
 }
 
-.titre_populaire{
+.blocTitre_populaire{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     padding: 20px 0px 0px 20px;
-    font-weight: bold;
+   
     
+}
+
+.titre_populaire{
+    font-size: 16px;
+    font-weight: bold;
+    font-size: 16px;
 }
 .fa-chart-line:before{
     padding-right: 20px;
@@ -488,8 +495,8 @@ aside a{
     display: block;
 }
 
-.titre{
-   font-size: 14px;
+.titre_activites{
+   font-size: 16px;
 }
 
 #img1{
