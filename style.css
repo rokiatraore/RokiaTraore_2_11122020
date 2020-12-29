@@ -7,6 +7,10 @@
 
 /*Page*/
 
+body{
+    margin: 0;
+}
+
 #bloc_page
 {
     max-width: 1300px;
@@ -86,8 +90,8 @@ nav .menu:hover {
 
     nav{
         grid-area: menu;
-        grid-column: 1/2;
-        grid-row: 2;
+        grid-column: 1/ span 2;
+        grid-row: 2 / 2;
         text-align: center;
     }
 
@@ -159,13 +163,13 @@ button{
 }
 
 @media all and (min-width: 767px){
-    .recherche_mobile{
-    display: none;
+    .recherche_mobile {
+        display: none;
 }
 
 }
 @media all and (max-width: 768px){
-    .recherche_destock{
+    .recherche_destock {
         display: none;
     }
 }
@@ -191,24 +195,39 @@ h2{
     margin-right: 10px;
 }
 
-.fa-money-bill-wave:before, .fa-child:before,.fa-heart:before,  .fa-dog:before {
-    color: #0065FC ;
-    background-color: #DEEBFF;
-    padding: 11px;
-    border-radius: 20px;
-    position: relative;
-    left: 25px;
+
+.blocfiltre{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.blocfiltre:hover{
+    box-shadow:1px 1px 5px black; 
 
 }
-#economique, #familial, #romantique, #animaux {
+.iconefiltre {
+    color: #0065FC ;
+    background-color: #DEEBFF;
+    padding: 7px;
+    border-radius: 20px;
+    
+   
+}
+
+.legendefiltre {
     color: black;
     font-weight: bold;
-    background-color: white;
-    border: solid 2px #f2f2f2 ;
-    border-radius: 20px;
-    padding: 10px 15px 10px 30px;
-    
+    padding-left: 7px;
+    padding-right: 9px;
+    font-size: small;
 }
+
 
 /*Section Hébergements*/
 
@@ -579,7 +598,7 @@ aside a{
     display: flex;
     background-color: #F2F2F2 ;
     font-family: 'Raleway', sans-serif;
-    margin-top: 30px;
+   width: 100%;
 
     
 }

@@ -6,30 +6,31 @@
 
                     <title> Reservia </title>
                     <link rel="stylesheet" href="style.css">
-                    <!--Police-->
+                    <!--POLICE-->
                     <link rel="preconnect" href="https://fonts.gstatic.com">
                     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-                    <!--Icône-->
+                    <!--ICONE-->
                     <script src="https://kit.fontawesome.com/6b55ea15fb.js" crossorigin="anonymous"></script>
         </head>
         
     <body>
     
     <div id="bloc_page">
-    <!--HEADER--> 
 
-        <header>    
-        <!--Logo-->
+    <!--HEADER-->
+        <header> 
+
+    <!--LOGO-->
                 <div id=logo>
-                    <a href="#"><img src="reservia\Projet 2 - Reservia\images\logo\Reservia.svg" alt="logo" /></a>
+                    <a href="#"><img src="reservia\Projet2\images\logo\Reservia.svg" alt="logo" /></a>
                 </div>
 
-        <!--Navigation-->
+    <!--NAVIGATION-->
                 <nav>
-                    
                         <a class="menu menu1" href="#sectionhebergements">Hébergements</a>
                         <a class="menu menu2" href="#sectionactivites">Activités</a>               
                 </nav>
+
                 <a class="inscrire" href="#" >S'inscrire</a>
                         
         </header>
@@ -43,8 +44,10 @@
 
             <div>
                 <form method="post" action="traitement.php">
+                    <!--Barre de recherche Destock-->
                     <p class="recherche_destock"><i class="fas fa-map-marker-alt"></i><input type="search" name="recherche" value="Marseille, France"/><input type="button" value="Rechercher"/></p>
                 
+                    <!--Barre de recherche Mobile-->
                     <p class="recherche_mobile"><i class="fas fa-map-marker-alt"></i><input type="search" name="recherche" value="Marseille, France"/><button><i class="fas fa-search"></i></button></p>
 
                 </form>
@@ -52,42 +55,55 @@
         
             </div>
 
+    <!--FILTRES-->
+
             <div class="filtres">
 
                 <h2>Filtres</h2>
 
-                <p>
-                    <i class="fas fa-money-bill-wave"></i><input id="economique" type="button" value="Économique" />
-                </p>
+                <div class="blocfiltre">
+                    <div class="iconefiltre">
+                     <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <span class="legendefiltre">Économique</span>
+                </div>
 
-                <p>
-                    <i class="fas fa-child"></i><input id="familial" type="button" value="familial"/>
-                </p>
-
-                <p>
-                    <i class="fas fa-heart"></i><input id="romantique" type="button" value="Romantique"/>
-                </p>
-
-                <p>
-                    <i class="fas fa-dog"></i><input id="animaux" type="button" value="Animaux autorisés"/></i>
-                </p>
+                <div class="blocfiltre">
+                    <div class="iconefiltre">
+                     <i class="fas fa-child"></i>
+                    </div>
+                    <span class="legendefiltre">Familial</span>
+                </div>
+                
+                <div class="blocfiltre">
+                    <div class="iconefiltre">
+                     <i class="fas fa-heart"></i>
+                    </div>
+                    <span class="legendefiltre">Romantique</span>
+                </div>
+                
+                <div class="blocfiltre">
+                    <div class="iconefiltre">
+                     <i class="fas fa-dog"></i>
+                    </div>
+                    <span class="legendefiltre">Animaux</span>
+                </div>
 
             </div>
         
-            <!--Section Hébergements-->
+        <!--HEBERGEMENTS-->
 
-            
             <section id="sectionhebergements">
 
                 <article >
 
                     <h1 class="titre-article">Hébergements à Marseille</h1>
+
                 <div class="hebergements">
 
                     <a href="#">
-
-                        <figure>
-                            <img class="img-hebergements" src="reservia\Projet 2 - Reservia\images\hebergements\2_large\marcus-loke.jpg" alt="Voici l'image"/>
+                      <figure>
+                            <img class="img-hebergements" src="reservia\Projet2\images\hebergements\2_large\marcus-loke.jpg" alt="Voici l'image"/>
                             <figcaption>
                                 <h3>Auberge la Cannebière</h3>
                                 <p>Nuit à partir de 25€</p>
@@ -99,7 +115,7 @@
         
                     <a href="#">
                         <figure >
-                            <img  class="img-hebergements" src="reservia\Projet 2 - Reservia\images\hebergements\2_large\fred-kleber.jpg" alt="Voici l'image"/>
+                            <img  class="img-hebergements" src="reservia\Projet2\images\hebergements\2_large\fred-kleber.jpg" alt="Voici l'image"/>
                             <figcaption>
                                 <h3>Hôtel du port</h3>
                                 <p>Nuit à partir de 52€</p>
@@ -110,7 +126,7 @@
 
                     <a href="#">
                         <figure>
-                            <img class="img-hebergements" src="reservia\Projet 2 - Reservia\images\hebergements\3_medium\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Voici l'image"/>
+                            <img class="img-hebergements" src="reservia\Projet2\images\hebergements\3_medium\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Voici l'image"/>
                             <figcaption>
                                 <h3>Hôtel Les mouettes</h3>
                                 <p>Nuit à partir de 76€</p>
@@ -121,7 +137,7 @@
         
                     <a href="#">   
                         <figure>
-                            <img class="img-hebergements" src="reservia\Projet 2 - Reservia\images\hebergements\3_medium\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Voici l'image"/>
+                            <img class="img-hebergements" src="reservia\Projet2\images\hebergements\3_medium\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Voici l'image"/>
                             <figcaption>
                                 <h3>Hôtel de la mer</h3>
                                 <p>Nuit à partir de 46€</p>
@@ -132,7 +148,7 @@
 
                     <a href="#">   
                         <figure>
-                            <img class="img-hebergements" src="reservia\Projet 2 - Reservia\images\hebergements\3_medium\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Voici l'image"/>
+                            <img class="img-hebergements" src="reservia\Projet2\images\hebergements\3_medium\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Voici l'image"/>
                             <figcaption>
                                 <h3>Auberge Le Panier</h3>
                                 <p>Nuit à partir de 23€</p>
@@ -141,7 +157,7 @@
 
                      <a href="#">  
                         <figure>
-                            <img class="img-hebergements" src="reservia\Projet 2 - Reservia\images\hebergements\3_medium\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Voici l'image"/>
+                            <img class="img-hebergements" src="reservia\Projet2\images\hebergements\3_medium\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Voici l'image"/>
                             <figcaption>
                                 <h3>Hôtel chez Amina</h3>
                                 <p>Nuit à partir de 96€</p>
@@ -169,7 +185,7 @@
 
                     <a href="#">
                         <figure class="figure-populaire">
-                            <img class="img-populaire" src="reservia\Projet 2 - Reservia\images\hebergements\2_large\emile-guillemot.jpg" alt="Voici l'image"/>
+                            <img class="img-populaire" src="reservia\Projet2\images\hebergements\2_large\emile-guillemot.jpg" alt="Voici l'image"/>
                             <figcaption class="figcaption-populaire">
                                 <h3>Hôtel le soleil du matin</h3>
                                 <p>Nuit à partir de 128€</p>
@@ -181,7 +197,7 @@
 
                     <a href="#">
                         <figure class="figure-populaire">
-                            <img class="img-populaire" src="reservia\Projet 2 - Reservia\images\hebergements\2_large\aw.jpg" alt="Voici l'image"/>
+                            <img class="img-populaire" src="reservia\Projet2\images\hebergements\2_large\aw.jpg" alt="Voici l'image"/>
                             <figcaption class="figcaption-populaire">
                                 <h3>Au coeur de l'eau chambre d'hôte</h3>
                                 <p>Nuit à partir de 71€</p>
@@ -192,7 +208,7 @@
 
                     <a href="#">
                         <figure class="figure-populaire">
-                            <img class="img-populaire" src="reservia\Projet 2 - Reservia\images\hebergements\2_large\febrian-zakaria2.jpg" alt="Voici l'image"/>
+                            <img class="img-populaire" src="reservia\Projet2\images\hebergements\2_large\febrian-zakaria2.jpg" alt="Voici l'image"/>
                             <figcaption class="figcaption-populaire">
                                 <h3>Hôtel Tout bleu et Blanc</h3>
                                 <p>Nuit à partir de 68€</p>
@@ -292,7 +308,7 @@
       
     </div>
     <!--FOOTER-->
-    <section id="footer">
+    <footer id="footer">
     
         <div class="footer-colonne1">
             <h3>A propos</h3>
@@ -312,6 +328,6 @@
             <a href="#">Centre d'aide</a>
             <a href="#a">Nous contacter</a>
         </div>
-    </section>
+    </footer>
     </body>
     </html>
