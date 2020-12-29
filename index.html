@@ -43,8 +43,13 @@
 
             <div>
                 <form method="post" action="traitement.php">
-                    <p><i class="fas fa-map-marker-alt"></i><input type="search" name="recherche" value="Marseille, France"/><input type="button" value="Rechercher"/></p>
+                    <p class="recherche_destock"><i class="fas fa-map-marker-alt"></i><input type="search" name="recherche" value="Marseille, France"/><input type="button" value="Rechercher"/></p>
+                
+                    <p class="recherche_mobile"><i class="fas fa-map-marker-alt"></i><input type="search" name="recherche" value="Marseille, France"/><button><i class="fas fa-search"></i></button></p>
+
                 </form>
+
+        
             </div>
 
             <div class="filtres">
@@ -205,55 +210,80 @@
 
             <!--Activités-->
 
-            <section id="sectionactivites">
+        <section id="sectionactivites">
                   
                
             <div class="wrapper">
 
-                 
-                 <div id="img1" class="a">
-                   <a  href="#" >   
-                       <img id="img_colonne" src="reservia\Projet 2 - Reservia\images\activites\1_xlarge\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Voici l'image"/>
-                        <h3 class="titreimg">Vieux Port</h3>     
+                 <h1>Activités à Marseilles</h1>
+                
+                   <a  id="img1" class="a" href="#" >   
+                    <figure >
+                       <img   src="reservia\Projet 2 - Reservia\images\activites\3_medium\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Voici l'image" id="img_colonne"/>
+                   
+                        <figcaption>
+                            <h3 class="titreimg">Vieux Port</h3>  
+                        </figcaption>    
+                    </figure>
                      </a> 
-                    </div>
+                   
               
 
-                <div  id="img2" class="b">
-                    <a href="#">
-                            <img id="img_colonne" src="reservia\Projet 2 - Reservia\images\activites\2_large\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Voici l'image"/>
-                          <h3 class="titreimg">Fort de Pomègues</h3>
+                
+                    <a id="img2" class="b" href="#">
+                        <figure>
+                            <img id="img_colonne" src="reservia\Projet 2 - Reservia\images\activites\3_medium\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Voici l'image"/>
+                        
+                        <figcaption>
+                            <h3 class="titreimg">Fort de Pomègues</h3>
+                        </figcaption>
+                        </figure>
+                    </a>
+                     
+                
+                    <a id="img3" class="c" href="#"> 
+                        <figure>
+                            <img id="img_colonne" src="reservia\Projet 2 - Reservia\images\activites\3_medium\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Voici l'image"/>
+                        
+                        <figcaption>
+                            <h3 class="titreimg">Ile de Frioul</h3> 
+                        </figcaption> 
+                        </figure> 
+                    </a>
+                
+
+                    <a id="img4" class="d" href="#">
+                        <figure>
+                            <img id="img_colonne" src="reservia\Projet 2 - Reservia\images\activites\3_medium\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Voici l'image"/>
+                          
+                         <figcaption>
+                             <h3 class="titreimg">Parc National des Calanques</h3>
+                        </figcaption> 
+                        </figure>   
+                    </a>
+         
+
+                     <a id="img5" class="e" href="#">
+                         <figure>
+                            <img id="img_colonne" src="reservia\Projet 2 - Reservia\images\activites\3_medium\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Voici l'image"/>
+                           
+                         <figcaption>
+                            <h3 class="titreimg">Notre-Dame-de-la-Garde</h3>
+                        </figcaption>
+                    </figure> 
+                    </a>
+                
+                    <a id="img6" class="f" href="#">
+                        <figure>
+                            <img id="img_colonne" src="reservia\Projet 2 - Reservia\images\activites\3_medium\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Voici l'image"/>
+                        
+                        <figcaption>
+                            <h3 class="titreimg">Parc Longchamp</h3>
+                        </figcaption>
+                    </figure>
                     </a>
                         
-                </div>
-
-                <div id="img3" class="c">
-                    <a href="#"> 
-                        <img id="img_colonne" src="reservia\Projet 2 - Reservia\images\activites\2_large\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Voici l'image"/>
-                        <h3 class="titreimg">Ile de Frioul</h3>   
-                    </a>
-                </div>
-           
-
-            <div id="img4" class="d">
-                    <a href="#">
-                        <img id="img_colonne" src="reservia\Projet 2 - Reservia\images\activites\2_large\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Voici l'image"/>
-                            <h3 class="titreimg">Parc National des Calanques</h3>
-                    </a>
             </div>
-
-                <div id="img5" class="e">
-                     <a href="#">
-                            <img id="img_colonne" src="reservia\Projet 2 - Reservia\images\activites\2_large\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Voici l'image"/>
-                            <h3 class="titreimg">Notre-Dame-de-la-Garde</h3>
-                    </a>
-                </div>
-                
-                <div  id="img6" class="f">
-                    <a href="#">
-                            <img id="img_colonne" src="reservia\Projet 2 - Reservia\images\activites\2_large\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Voici l'image"/>
-                            <h3 class="titreimg">Parc Longchamp</h3>
-                </div>
 
             </article>
         </section>

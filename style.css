@@ -35,23 +35,23 @@ nav{
 nav a {
     color : black;
     text-decoration: none;
-    padding: 32px;
+    padding: 20px;
     
     
 }
 
 nav .menu:focus {
-    color : #0065FC;
-    border-top:solid 3px #0065FC ;
+    color: #0065FC;
+    border-top: solid 3px #0065FC;
     
 }
 
 nav .menu:hover {
-    border-top:solid 3px #0065FC ;
+
     color: #0065FC;
+    border-top: solid 3px #0065FC;
     
 }
-
 
 
 .inscrire {
@@ -65,7 +65,7 @@ nav .menu:hover {
         grid-template-rows: 2em 2em ;        
         grid-template-areas: 
             "logo inscrire"
-            "menu menu menu";
+            "menu menu ";
         
         padding-bottom: 26px;
         border-bottom: solid 3px#F2F2F2;
@@ -148,6 +148,27 @@ input[type=button] {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+button{
+    color: white;
+    font-size: 12px;
+    background-color:#0065FC ;
+    padding:7px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media all and (min-width: 767px){
+    .recherche_mobile{
+    display: none;
+}
+
+}
+@media all and (max-width: 768px){
+    .recherche_destock{
+        display: none;
+    }
+}
 /*Filtres*/
 
 .filtres {
@@ -158,7 +179,8 @@ input[type=button] {
 
 @media all and (max-width:800px){
     .filtres{
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     
     }
 }
@@ -283,8 +305,15 @@ figcaption h3{
 /*Responsive - Section Hébergements*/
 
 
+@media all and (max-width : 570px){
+    figure{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
 
-@media all and (max-width:800px){
+@media all and (max-width:571px){
     section, aside {
         flex-direction: column-reverse;
         margin-bottom: 10px;
@@ -296,8 +325,8 @@ figcaption h3{
     }
     .hebergements{
         display: flex;
+        
     }
-    
 }
 
 
@@ -410,31 +439,57 @@ aside a{
 
 .wrapper{
     display: grid;
-    grid-template-columns: repeat(4, 16.5em);
-    grid-auto-rows: 2em;
-   
-    column-gap: 2em;
-    row-gap: 1.6em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8,3em);
     background-color: white;
-    margin: 20px 0 90px 0;
+    grid-column-gap : 20px;
+    grid-row-gap:20px;
+    width : 100%;
 
    
 } 
+
+#sectionactivites {
+    margin-top: 30px;
+}
+
+#sectionactivites h1 {
+    padding-bottom: 10px;
+}
+
+#sectionactivites figure {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+  }
+
+#img_colonne{
+    
+    max-width: 100%;
+    height: 100px;
+    flex: 1;
+    min-height: 0;
+    object-fit: cover;
+    display: block;
+}
 
 .titre{
    font-size: 14px;
 }
 
 #img1{
-    grid-row: 1 / 8;
-    border-radius: 20px;
-
-
+    grid-column: 1;
+    grid-row: 2/8;
 }
+
 
 #img2{
     grid-column: 2 ;
-    grid-row: 1 / 4;
+    grid-row: 2 / 5;
 }
 
 
@@ -447,13 +502,13 @@ aside a{
 
 #img4{
     grid-column: 3;
-    grid-row: 1 / 8;
+    grid-row: 2 / 8;
 
 }
 
 #img5{
     grid-column: 4;
-    grid-row: 1 / 4;
+    grid-row: 2 / 5;
 }
 
 #img6{
@@ -461,18 +516,14 @@ aside a{
     grid-row: 5 / 8;
 }
 
-#img_colonne{
-    
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 
 
-@media all and (max-width:800px){
+
+@media all and (max-width:570px){
     .wrapper{
         grid-template-areas: 
+        "titre"
         "a"
         "b"
         "c"
@@ -481,14 +532,18 @@ aside a{
         "f";
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        
     }
-
+    .wrapper h1{
+        grid-area: titre;
+    }
     #img1 {
         grid-area: a;
     }
 
     #img2{
         grid-area: b;
+        
     }
 
     #img3{
@@ -507,7 +562,14 @@ aside a{
         grid-area: f;
     }
 
+    
+    
+}
 
+@media all and (max-width:860px){
+    #sectionactivites figcaption{
+        line-height: 15px;
+    }
 }
 
 
@@ -517,6 +579,7 @@ aside a{
     display: flex;
     background-color: #F2F2F2 ;
     font-family: 'Raleway', sans-serif;
+    margin-top: 30px;
 
     
 }
@@ -536,6 +599,7 @@ aside a{
 .footer-colonne1, .footer-colonne2, .footer-colonne3{
     margin: 10px 200px 10px 40px;
 }
+
 
 
 
