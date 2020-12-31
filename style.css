@@ -123,7 +123,7 @@ main
 /*RECHERCHE*/
 
 h1{
-    font-size: medium;
+    font-size: 16px;
     font-weight: 800;
     line-height: 2px;
 }
@@ -240,6 +240,24 @@ h2{
     font-size: small;
 }
 
+#information{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.fa-info{
+
+    color: #0065FC;
+    border : 2px solid #f2f2f2;
+    padding : 5px 10px 5px 10px;
+    border-radius: 100%;
+    
+}
+
+#information p{
+    padding-left: 10px;
+}
 
 /*PARTIE HEBERGEMENTS*/
 
