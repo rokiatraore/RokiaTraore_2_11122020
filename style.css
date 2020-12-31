@@ -9,14 +9,10 @@
 
 body{
     margin: 0;
-}
-
-#bloc_page
-{
-    max-width: 1300px;
-    margin: auto;
     font-family: 'Raleway', sans-serif;
 }
+
+
 
 
 
@@ -24,29 +20,42 @@ body{
 
 header{
     display: grid;
-    grid-template-columns: auto 1fr auto auto auto;
-    grid-gap: 10px;   
-    align-items: center;
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: 
+    "logo . nav inscrire";
+    padding: 25px;
+}
+
+#logo {
+    grid-area: logo;
+}
+
+nav {
+    grid-area: nav;
+   
+}
+
+.inscrire{
+    grid-area: inscrire;
+    display:flex;
+
 }
 
 
-nav{
-    grid-column: 4/4;
-}
 
 nav a {
     color : black;
     text-decoration: none;
-    padding: 12px;   
+    padding: 20px;   
 }
 
-nav .menu:focus {
+nav a:focus {
     color: #0065FC;
     border-top: solid 3px #0065FC;
     
 }
 
-nav .menu:hover {
+nav a:hover {
 
     color: #0065FC;
     border-top: solid 3px #0065FC;
@@ -56,47 +65,45 @@ nav .menu:hover {
 .inscrire {
     color: #0065FC;
     font-weight: bold;
+    padding-left: 20px;
 }
 
 @media all and (max-width:600px){
     header{
-        grid-template-columns: 1fr ;
-        grid-template-rows: 2em 2em ;        
+        grid-template-columns: 1fr ;       
         grid-template-areas: 
-            "logo inscrire"
-            "menu menu ";
-        
-        padding-bottom: 7px;
-        border-bottom: solid 3px#F2F2F2;
-
+            "logo . inscrire"
+            "nav nav nav ";
     }
 
     #logo{
         grid-area: logo;
-        grid-column: 1/1;
-        grid-row: 1;
+        
     }
     .inscrire{
         grid-area: inscrire;
-        grid-column: 2/2;
-        grid-row: 1;
-        text-align: right;
+        
     }
 
     nav{
-        grid-area: menu;
-        grid-column: 1/ span 2;
-        grid-row: 2 / 2;
-        text-align: center;
+        grid-area: nav;
+        display: flex;
+       
     }
 
-    nav .menu:focus {
+   nav a{
+       width: 50%;
+       text-align: center;
+       border-bottom:3px solid #F2F2F2;
+   }
+
+    nav a:focus {
         color : #0065FC;
         border-bottom:solid 3px #0065FC ;
         border-top: none;
     }
     
-    nav .menu:hover {
+    nav a:hover {
         border-bottom:solid 3px #0065FC ;
         border-top: none;
         color: #0065FC;
@@ -104,9 +111,16 @@ nav .menu:hover {
     }
 }
 
+main
+{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 15px;
+    
+}
 
 
-/*Recherche*/
+/*RECHERCHE*/
 
 h1{
     font-size: medium;
@@ -181,6 +195,7 @@ button{
     .filtres{
         display: flex;
         flex-wrap: wrap;
+        
     
     }
 }
@@ -205,6 +220,7 @@ h2{
 
 .blocfiltre:hover{
     box-shadow:1px 1px 5px black; 
+    background-color: #F2F2F2;
 
 }
 .iconefiltre {
@@ -230,9 +246,6 @@ h2{
 
 section{
    display: flex;
-   width: 100%;
-   max-width: 1300px;
-  
 }
 
 
@@ -321,12 +334,13 @@ figcaption h3{
 /*RESPONSIVE - Partie Hébergements*/
 
 
-@media all and (max-width : 570px){
+@media all and (max-width : 584px){
     figure{
         width: 100%;
         margin: auto;
         margin-bottom: 20px;
     }
+   
 }
 
 @media all and (max-width:571px){
@@ -495,8 +509,10 @@ aside a{
     display: block;
 }
 
-.titre_activites{
+.titre_activites {
    font-size: 16px;
+   padding:20px 0px 0px 20px ;
+ 
 }
 
 #img1{
@@ -536,9 +552,48 @@ aside a{
 
 /*RESPONSIVE - Partie activité*/
 
-@media all and (max-width:570px){
+@media all and (max-width:800px){
     .wrapper{
-        grid-template-areas: 
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin: auto;}
+
+        .titre_activites{
+            grid-row: 1;
+        }
+
+        #img1{
+            grid-column: 1/1;
+            grid-row: 2;
+        }
+        #img2{
+            grid-column:  2/2;
+            grid-row: 2;
+        }
+        #img3{
+            grid-column: 1/2;
+            grid-row: 3;
+        }
+        #img4{
+            grid-column: 2/2;
+            grid-row: 3;
+        }
+        #img5{
+            grid-column: 1/2;
+            grid-row: 4;
+        }
+        #img6{
+            grid-column: 2/2;
+            grid-row: 4;
+        }
+
+        @media all and (max-width:584px){
+
+       .wrapper{ 
+           display:grid;
+           grid-template-areas: 
         "titre"
         "image1"
         "image2"
@@ -548,7 +603,7 @@ aside a{
         "image6";
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        
+        margin: auto;
     }
     .wrapper h1{
         grid-area: titre;
@@ -577,6 +632,7 @@ aside a{
     #img6{
         grid-area: image6;
     }
+}
 
     
     
