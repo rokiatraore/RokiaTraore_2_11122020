@@ -37,7 +37,7 @@ nav {
 
 .inscrire{
     grid-area: inscrire;
-    display:flex;
+   
 
 }
 
@@ -82,6 +82,7 @@ nav a:hover {
     }
     .inscrire{
         grid-area: inscrire;
+        align-self : center;
         
     }
 
@@ -111,6 +112,8 @@ nav a:hover {
     }
 }
 
+/*MAIN*/
+
 main
 {
     max-width: 1440px;
@@ -128,7 +131,7 @@ h1{
     line-height: 2px;
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 440px){
     h1{
         line-height: 15px;
     }
@@ -421,7 +424,7 @@ aside a{
     
     border: solid 5px white;
     width: 80%;
-    height: 120px;
+    height: auto;
     margin: 10px;
     
 }
@@ -487,12 +490,18 @@ aside a{
     }
 }
 
+@media all and (max-width : 352px){
+    .figcaption_populaire p{
+        padding-bottom: 0px;
+    }
+}
+
 /*ACTIVITES*/
 
 .wrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8,3em);
+    grid-template-rows: repeat(7,3em);
     background-color: white;
     grid-column-gap : 20px;
     grid-row-gap:20px;
@@ -513,7 +522,6 @@ aside a{
     height: 100%;
     width: 100%;
     margin: 0;
-    box-sizing: border-box;
     border: none;
   }
 
