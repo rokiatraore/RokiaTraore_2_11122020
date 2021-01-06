@@ -265,7 +265,7 @@ h2{
 /*PARTIE HEBERGEMENTS*/
 
 
-section{
+.section{
    display: flex;
 }
 
@@ -365,7 +365,7 @@ figcaption h3{
 }
 
 @media all and (max-width:571px){
-    section, aside {
+    .section, aside {
         flex-direction: column-reverse;
         margin-bottom: 10px;
         justify-content: center;
@@ -451,7 +451,7 @@ aside a{
 /*RESPONSIVE - Partie Populaire*/
 
 @media all and (max-width:1181px){
-    section, aside{
+    .section, aside{
        flex-direction: column-reverse;
      
    }
@@ -506,17 +506,16 @@ aside a{
     grid-column-gap : 20px;
     grid-row-gap:20px;
     width : 100%;  
+    margin-top: 30px;
+    margin-bottom: 30px;
 } 
 
-#sectionactivites {
-    margin-top: 30px;
-}
 
-#sectionactivites h1 {
+.wrapper h1 {
     padding-bottom: 10px;
 }
 
-#sectionactivites figure {
+.wrapper figure {
     display: flex;
     flex-direction: column;
     height: 100%;
