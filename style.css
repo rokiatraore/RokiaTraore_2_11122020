@@ -356,6 +356,10 @@ figcaption h3{
 
 
 @media all and (max-width : 584px){
+    .hebergements{
+        flex-direction: column;
+    }
+    
     figure{
         width: 100%;
         margin: auto;
@@ -363,6 +367,7 @@ figcaption h3{
     }
    
 }
+
 
 @media all and (max-width:571px){
     .section, aside {
@@ -580,13 +585,16 @@ aside a{
 @media all and (max-width:800px){
     .wrapper{
         display: grid;
-
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         margin: auto;}
 
         .titre_activites{
             grid-row: 1;
+        }
+
+        .img_colonne{
+            flex: none;
         }
 
         #img1{
