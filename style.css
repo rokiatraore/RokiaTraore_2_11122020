@@ -359,7 +359,7 @@ figcaption h3{
     .hebergements{
         flex-direction: column;
     }
-    
+
     figure{
         width: 100%;
         margin: auto;
@@ -511,7 +511,6 @@ aside a{
     grid-column-gap : 20px;
     grid-row-gap:20px;
     width : 100%;  
-    margin-top: 30px;
     margin-bottom: 30px;
 } 
 
@@ -582,12 +581,13 @@ aside a{
 
 /*RESPONSIVE - Partie activité*/
 
-@media all and (max-width:800px){
+@media all and (max-width:827px){
     .wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        margin: auto;}
+        
+}
 
         .titre_activites{
             grid-row: 1;
@@ -636,7 +636,7 @@ aside a{
         "image6";
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        margin: auto;
+        
     }
     .wrapper h1{
         grid-area: titre;
@@ -671,8 +671,8 @@ aside a{
     
 }
 
-@media all and (max-width:860px){
-    #sectionactivites figcaption{
+@media all and (max-width:872px){
+    #img4 > figure > figcaption > h3{
         line-height: 15px;
     }
 }
