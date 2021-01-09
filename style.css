@@ -57,7 +57,7 @@ nav a:focus {
 
 nav a:hover {
 
-    color: #0065FC;
+    color: red;
     border-top: solid 3px #0065FC;
     
 }
@@ -217,8 +217,7 @@ h2{
     border: 1px solid #d9d9d9;
     border-radius: 35px;
     margin-bottom: 20px;
-    height: 30px;
-    cursor: pointer;
+    
 }
 
 .blocfiltre:hover{
