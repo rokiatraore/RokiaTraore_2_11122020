@@ -1,6 +1,6 @@
 # Reservia
-Projet 2 du parcours développement Web d'Openclassroom.
-Ojectif : Intégrer la maquette d'un site proposant un outil de planification de vacances. Le site doit être responsive (voir image ci-dessous) :
+<p>Projet 2 du parcours développement Web d'Openclassroom. </p>
+<p><strong>Ojectif</strong> : Intégrer la maquette d'un site proposant un outil de planification de vacances. Le site doit être responsive (voir image ci-dessous) :</p>
 
 ![Desktop - 1](https://user-images.githubusercontent.com/74746927/103108693-24442480-4647-11eb-9a71-6dfc2cb7e4bb.png)
 
